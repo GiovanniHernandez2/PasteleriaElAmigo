@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="pedido.css">
+    <link rel="stylesheet" href="Textos.css">
+</head>
+<body>
+    <section class="fondoColor">
+   <center><h1>Realizar Pedidos</h1></center> 
+
+    <form action="/my-handling-form-page" method="post">
+
+        <ul>
+        <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name">
+          </li>
+          <li>
+            <br>
+          <label for="tel">Telefono:</label>
+          <input type="number" id="tel" name="tel">
+        </li>
+          <li>
+              <br>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail">
+          </li>
+          <li>
+            <br>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li>
+            <br>
+          <label for="sabor">Sabores:</label>
+          <input type="text" id="sabor" name="sabor">
+        </li>
+        <li>
+            <br>
+          <label for="adorno">Adornos:</label>
+          <input type="text" id="adorno" name="adorno">
+        </li>
+
+        <li class="button">
+            <button type="submit"onclick="hizoClick()">Envíe su mensaje</button>
+          </li>
+
+          <script>
+            function hizoClick() {
+              alert("PEDIDO REALIZADO CON EXITO");
+            }
+            </script>
+         </ul>
+        </form>
+
+
+    </section>
+
+</body>
+</html>
